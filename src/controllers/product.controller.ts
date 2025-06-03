@@ -13,7 +13,7 @@ const createProduct = (req: Request, res: Response) => {
 
 // GET todos los productos
 const getProducts = (req: Request, res: Response) => {
-    res.json(products);
+    res.status(500).json(products);
 };
 
 export {

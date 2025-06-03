@@ -11,6 +11,12 @@ const createProduct = (req: Request, res: Response) => {
     res.status(201).json(newProduct);
 };
 
+// GET todos los productos
+const getProducts = (req: Request, res: Response) => {
+    res.json(products);
+};
+
 export {
-    createProduct
+    createProduct,
+    getProducts
 }
